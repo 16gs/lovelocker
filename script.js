@@ -1,10 +1,14 @@
 function checkPassword() {
   const input = document.getElementById("password").value;
-  if (input === "zamzam") {
+  const error = document.getElementById("error");
+
+  if (input === "lovelocker") {
     window.location.href = "vault.html";
   } else {
-    alert("Oops! That’s not our code 💔");
+    error.textContent = "Incorrect password. Try again 💔";
+    error.style.color = "red";
   }
 }
+
 
 
