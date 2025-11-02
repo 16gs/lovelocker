@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Secret Room</title>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="vault-container">
+    <h1>Our Love Locker 💌</h1>
+    <p class="tagline">Tell me about your day, tag a vibe, and let it sparkle</p>
+
+    <textarea id="memoryInput" placeholder="Type your memory here..."></textarea>
+    <select id="vibeTag">
+      <option value="💖 Flirty">💖 Flirty</option>
+      <option value="😢 Sad">😢 Sad</option>
+      <option value="😈 Spicy">😈 Spicy</option>
+      <option value="🌸 Soft">🌸 Soft</option>
+    </select>
+    <button onclick="saveMemory()">Save Memory</button>
+
+    <div id="memoryVault"></div>
+  </div>
+
+  <script src="vault.js"></script>
+</body>
+</html>
