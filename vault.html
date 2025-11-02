@@ -11,7 +11,7 @@
     <h1>Our Love Locker 💌</h1>
     <p class="tagline">Tell me about your day, tag a vibe, and let it sparkle</p>
 
-    <textarea id="memoryInput" placeholder="Type your memory here..."></textarea>
+    <input type="text" id="memoryInput" placeholder="Type your memory here...">
     <select id="vibeTag">
       <option value="💖 Flirty">💖 Flirty</option>
       <option value="😢 Tired">😢 Tired</option>
@@ -19,7 +19,7 @@
       <option value="🌸 Sleepy">🌸 Sleepy</option>
     </select>
     <button onclick="saveMemory()">Save Memory</button>
-
+    <p id="savedMemory"></p>
     <div id="memoryVault"></div>
   </div>
 
@@ -27,5 +27,6 @@
 </body>
 
 </html>
+
 
 
