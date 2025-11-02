@@ -6,6 +6,11 @@
   <link rel="stylesheet" href="vault-style.css">
 </head>
 <body>
+  <form id="uploadForm" enctype="multipart/form-data">
+  <input type="file" id="selfieInput" accept="image/*">
+  <button type="submit">Upload Selfie 💖</button>
+</form>
+<p id="uploadStatus"></p>
   <div class="vault-container">
     <h1>Our Memory Vault 💖</h1>
     <input type="text" id="memoryInput" placeholder="Type a sweet memory">
@@ -16,6 +21,7 @@
   <script src="vault.js" defer></script>
 </body>
 </html>
+
 
 
 
