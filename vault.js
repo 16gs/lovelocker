@@ -30,7 +30,16 @@ function saveMemory() {
 
   reader.readAsDataURL(file);
 });
+  window.addEventListener("load", function() {
+  const savedSelfie = localStorage.getItem("uploadedSelfie");
+  if (savedSelfie) {
+    const img = document.getElementById("selfiePreview");
+    img.src = savedSelfie;
+    img.style.display = "block";
+  }
+});
 }
+
 
 
 
