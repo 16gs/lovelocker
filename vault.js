@@ -1,11 +1,12 @@
 function saveMemory() {
-  const memory = document.getElementById("memoryInput").value;
-  const output = document.getElementById("savedMemory");
-
-  if (memory.trim() !== "") {
-    output.textContent = 💖 Saved: ${memory};
-    output.style.color = "hotpink";
+  const memoryInput = document.getElementById('memoryInput');
+  const savedMemoryDisplay = document.getElementById('savedMemory');
+  if (memoryInput.value.trim() !== '') {
+    savedMemoryDisplay.textContent = 'Memory saved: ' + memoryInput.value;
+    memoryInput.value = ''; // Clear the input after saving
   } else {
-    alert("Please enter a memory before saving 💭");
+    savedMemoryDisplay.textContent = 'Please enter a memory to save.';
   }
 }
+
+
