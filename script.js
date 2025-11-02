@@ -1,9 +1,10 @@
-function unlockVault() {
-  const passcode = document.getElementById("passcode").value;
-  if (passcode === "2babies"){
+function checkPassword() {
+  const input = document.getElementById("password").value;
+  if (input === "zamzam") {
     window.location.href = "vault.html";
   } else {
-    error.textContent = "Oops! That’s not our code 💔";
+    alert("Oops! That’s not our code 💔");
   }
 }
+
 
